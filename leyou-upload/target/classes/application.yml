@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: upload-service
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
